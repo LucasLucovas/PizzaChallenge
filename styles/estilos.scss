@@ -1,0 +1,17 @@
+$color-titulo: rgb(255, 0, 0);
+$fuente-normal: sans-serif, arial, helvetica;
+$tamaño: 25px;
+$fondo: gray;
+
+body {
+  background-color: $fondo;
+}
+
+h1 {
+  color: $color-titulo;
+}
+
+p {
+    font-size: $tamaño;
+    color: $color-titulo;
+}
