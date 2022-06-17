@@ -1,14 +1,93 @@
-body {
-  background-color: gray;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: rgb(255, 0, 0);
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(189, 153, 109);
 }
 
-p {
-  font-size: 25px;
-  color: rgb(255, 0, 0);
+
+/* Card principal*/
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /* width: 800px; */
+    border-radius: 10px;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+
+
+/* texto informativo sobre las pizzas  */
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    height: 250px;
+    position: relative;
+}
+.nombre{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color:rgb(155, 114, 37);
+}
+.precio{
+  position: absolute;
+  top: 112px;
+  left: 12px;
+  color:rgb(155, 114, 37);
+}
+.ingredientes{
+  margin-top: 140px;
+  font-size: 20px;
+  margin-left: 12px;
+  color:rgb(155, 114, 37);
+}
+
+/* Mensaje de error */
+.error{
+  z-index: 10;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+/* Imagenes de pizzas */
+.images{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+/* Input, botton y texto */
+
+.findPizzas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.findPizzas label{
+  color:rgb(252, 178, 40);
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}

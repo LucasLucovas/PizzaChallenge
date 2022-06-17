@@ -8,17 +8,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="card">
-
-        <h2 class="nombre"></h2>
-        <h4 class="precio"></h4>
-        <h4 class="ingredientes"></h4>
-        <label for="InputId">¡Click aqui! Coloca el id:</label>
-        <input type="number" id="InputId" min="1"/>
-        <button type="button"  class="submitButton">
-        Click me
-        </button>
-    </div>
+    <section>
+        <div class="card">
+            <div class="text">
+                <h2 class="error"></h2>
+                <h2 class="nombre"></h2>
+                <h4 class="precio"></h4>
+                <p class="ingredientes"></p>
+            </div>
+            <div class="findPizzas">
+                <label for="InputId">¡Click aqui! <br>Selecciona un numero del 1 al 6</label>
+                <input type="number" id="InputId" min="1" max="6"/>
+                <button type="button"  class="submitButton">
+                Seleccionar
+                </button>
+            </div>
+        </div>
+    </section>
     <script src="./app.js" type="module" ></script>
 </body>
 </html>

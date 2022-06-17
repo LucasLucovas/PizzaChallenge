@@ -1,11 +1,11 @@
  function pizzaWithImg(){
-    let h2 = document.querySelector('.nombre')
+    let div = document.querySelector('.text')
     let inputNumber = document.getElementById('InputId')
     let button = document.querySelector('.submitButton')
     let image = document.createElement('img')
     image.classList.add('images')
     image.width = 250
-    document.querySelector('.card').insertBefore(image,h2)
+    document.querySelector('.card').insertBefore(image,div)
 
     if (inputNumber.value == 1) {
 
