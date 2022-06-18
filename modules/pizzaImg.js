@@ -4,7 +4,6 @@
     let button = document.querySelector('.submitButton')
     let image = document.createElement('img')
     image.classList.add('images')
-    image.width = 250
     document.querySelector('.card').insertBefore(image,div)
 
     if (inputNumber.value == 1) {
@@ -50,6 +49,14 @@
             image.remove()
         })
     }
+    if (inputNumber.value == "" || inputNumber.value > 6 || inputNumber.value <= 0 ) {
+        image.src = "/img/DEFINICIONES.-ERROR-404.png"
+        button.addEventListener('click',()=>{
+            image.remove()
+        })
+
+    }
+    
 }
 
 export {pizzaWithImg};

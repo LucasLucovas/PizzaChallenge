@@ -54,19 +54,6 @@ section{
   color:rgb(155, 114, 37);
 }
 
-/* Mensaje de error */
-.error{
-  z-index: 10;
-  position: absolute;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
-
 
 /* Imagenes de pizzas */
 .images{
@@ -90,4 +77,24 @@ section{
   font-size: 18px;
   padding: 20px;
   text-align: center;
+}
+
+#InputId{
+  width: 60px;
+}
+.submitButton{
+  margin-top: 20px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+
+.submitButton{
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.submitButton:hover {
+  box-shadow: 0 0 40px 40px rgb(65, 58, 46) inset;
 }
